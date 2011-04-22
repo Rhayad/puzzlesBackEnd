@@ -48,13 +48,21 @@ GEM
     celerity (0.8.9)
     childprocess (0.1.8)
       ffi (~> 1.0.6)
+    crack (0.1.8)
     culerity (0.2.15)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    facebooker2 (0.0.11)
+      mogli (>= 0.0.12)
+      ruby-hmac
     faker (0.3.1)
+    ffi (1.0.7)
+      rake (>= 0.8.7)
     ffi (1.0.7-x86-mingw32)
       rake (>= 0.8.7)
     highline (1.6.1)
+    httparty (0.7.7)
+      crack (= 0.1.8)
     i18n (0.5.0)
     json_pure (1.5.1)
     machinist (1.0.6)
@@ -65,6 +73,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mocha (0.9.12)
+    mogli (0.0.28)
+      httparty (>= 0.4.3)
     mysql2 (0.2.7)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
@@ -73,7 +83,8 @@ GEM
     net-ssh (2.1.4)
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
-    nokogiri (1.4.4.1-x86-mingw32)
+    nokogiri (1.4.4)
+    nokogiri (1.4.4-x86-mingw32)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -94,13 +105,15 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
+    ruby-hmac (0.4.0)
     rubyzip (0.9.4)
-    selenium-webdriver (0.1.4)
+    selenium-webdriver (0.2.0)
       childprocess (>= 0.1.7)
       ffi (>= 1.0.7)
       json_pure
       rubyzip
     shoulda (2.11.3)
+    sqlite3 (1.3.3)
     sqlite3 (1.3.3-x86-mingw32)
     thor (0.14.6)
     treetop (1.4.9)
@@ -110,14 +123,17 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
   capistrano
   capybara
+  facebooker2
   faker (= 0.3.1)
   machinist
   mocha
+  mogli
   mysql2
   rails (= 3.0.5)
   shoulda

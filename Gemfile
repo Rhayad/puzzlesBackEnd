@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
 gem 'capistrano'
+gem 'mogli'
+gem 'facebooker2'
 
 group :development, :test do
   gem 'sqlite3'
